@@ -325,6 +325,23 @@
     <script type="text/javascript" src="js/isg-panel.min.js"></script>
     <!-- CAROUSEL -->
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- GOOGLE MAP -->
+    <script type="text/javascript" src="js/markerwithlabel.js"></script>
+    <script type="text/javascript" src="js/dvmap.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            "use strict";
+            jQuery("#isg-google-map").dvmap({
+                container: 'isg-google-map', // map container id
+                latitute: '38.90719', // latitute
+                longitude: '-77.03687', // longtitude
+                zoom: 14, // a numeric value between 0-19
+                zoomcntrl: true, // zoom control - true or false
+                maptypecntrl: false, // map type control - true or false
+                dvcustom: true // custom map style - true or false
+            });
+        });
+    </script>
     <!-- PORTFOLIO -->
     <script type="text/javascript" src="js/lightgallery.min.js"></script>
     <script type="text/javascript" src="js/portfolio-filter.js"></script>
